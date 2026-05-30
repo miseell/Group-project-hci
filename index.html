@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPatrol – Sign In</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <div class="auth-card">
+
+    <!-- Logo -->
+    <div class="auth-logo">
+      <div class="paw-icon">🐾</div>
+      <span class="brand-name">PawPatrol</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="form-title">Get Started now</h1>
+    <p class="auth-subtitle">Create an account or log in to explore our app.</p>
+
+    <!-- Social Buttons -->
+    <div class="social-btns">
+      <button class="social-btn">
+        <img class="social-icon" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+        Continue with Google
+      </button>
+      <button class="social-btn">
+        <img class="social-icon" src="https://www.svgrepo.com/show/448224/facebook.svg" alt="Facebook">
+        Continue with Facebook
+      </button>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"><span>Or</span></div>
+
+    <!-- Email Field -->
+    <div class="input-group">
+      <label class="input-label" for="email">Email</label>
+      <div class="input-wrap">
+        <input class="form-input" type="email" id="email" placeholder="you@example.com">
+      </div>
+    </div>
+
+    <!-- Password Field -->
+    <div class="input-group">
+      <label class="input-label" for="password">Password</label>
+      <div class="input-wrap">
+        <input class="form-input" type="password" id="password" placeholder="Enter your password">
+        <button class="eye-toggle" type="button" aria-label="Toggle password visibility">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94"/>
+            <path d="M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19"/>
+            <line x1="1" y1="1" x2="23" y2="23"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Remember / Forgot -->
+    <div class="form-row">
+      <label class="remember-wrap">
+        <input class="remember-checkbox" type="checkbox">
+        <span class="remember-label">Remember me</span>
+      </label>
+      <a class="forgot-link" href="#">Forgot Password?</a>
+    </div>
+
+    <!-- Login Button -->
+    <button class="login-btn" type="button">Log In</button>
+
+    <!-- Sign Up -->
+    <p class="signup-row">
+      Don't have an account? <a class="signup-link" href="#">Sign Up</a>
+    </p>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPatrol – Search</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+
+  <div class="page-wrap search-page">
+
+    <!-- Header -->
+    <header class="page-header">
+      <a class="logo" href="home.html">
+        <div class="logo-icon">🐾</div>
+        <span class="logo-text">PawPatrol</span>
+      </a>
+    </header>
+
+    <main class="page-content">
+
+      <!-- Hero Text -->
+      <div class="search-hero">
+        <h1 class="page-title">Search <span class="paw-accent">🐾</span></h1>
+        <p class="page-subtitle">Find the best care for your pet</p>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-bar-wrap">
+        <span class="search-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </span>
+        <input class="search-input" type="text" placeholder="Find nearby backers...">
+      </div>
+
+      <!-- Filter Pills -->
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="sitting">Sitting</button>
+        <button class="filter-pill" data-filter="walking">Walking</button>
+        <button class="filter-pill" data-filter="taxi">Taxi</button>
+        <button class="filter-pill" data-filter="grooming">Grooming</button>
+      </div>
+
+      <!-- Location Card -->
+      <div class="location-card">
+        <span class="location-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+        </span>
+        <div class="location-text">
+          <span class="location-label">Your Location</span>
+          <p class="location-value">123 Maple Street, Springfield</p>
+        </div>
+        <span class="change-link">Change</span>
+      </div>
+
+      <!-- Recommended Backers -->
+      <div class="section-header">
+        <h2 class="section-title">Recommended Backers</h2>
+      </div>
+
+      <div class="helpers-list">
+
+        <div class="helper-card reveal" data-service="sitting">
+          <img class="helper-avatar" src="https://i.pravatar.cc/100?img=47" alt="Sarah">
+          <div class="helper-info">
+            <p class="helper-name">Sarah Johnson</p>
+            <div class="helper-meta">
+              <span class="star-icon">★</span> 4.9 <span>(128 reviews)</span> · 1.2 km
+            </div>
+            <span class="service-badge badge-sitting">Pet Sitting</span>
+            <p class="helper-price">From $15/hr</p>
+          </div>
+          <button class="fav-btn" aria-label="Favourite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="helper-card reveal" data-service="walking">
+          <img class="helper-avatar" src="https://i.pravatar.cc/100?img=12" alt="Mark">
+          <div class="helper-info">
+            <p class="helper-name">Mark Rivera</p>
+            <div class="helper-meta">
+              <span class="star-icon">★</span> 4.7 <span>(86 reviews)</span> · 2.4 km
+            </div>
+            <span class="service-badge badge-walking">Pet Walking</span>
+            <p class="helper-price">From $12/hr</p>
+          </div>
+          <button class="fav-btn" aria-label="Favourite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="helper-card reveal" data-service="grooming">
+          <img class="helper-avatar" src="https://i.pravatar.cc/100?img=32" alt="Lisa">
+          <div class="helper-info">
+            <p class="helper-name">Lisa Chen</p>
+            <div class="helper-meta">
+              <span class="star-icon">★</span> 5.0 <span>(214 reviews)</span> · 0.8 km
+            </div>
+            <span class="service-badge badge-grooming">Grooming</span>
+            <p class="helper-price">From $25/hr</p>
+          </div>
+          <button class="fav-btn" aria-label="Favourite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="helper-card reveal" data-service="sitting">
+          <img class="helper-avatar" src="https://i.pravatar.cc/100?img=25" alt="Amy">
+          <div class="helper-info">
+            <p class="helper-name">Amy Patel</p>
+            <div class="helper-meta">
+              <span class="star-icon">★</span> 4.8 <span>(67 reviews)</span> · 3.1 km
+            </div>
+            <span class="service-badge badge-sitting">Pet Sitting</span>
+            <p class="helper-price">From $18/hr</p>
+          </div>
+          <button class="fav-btn" aria-label="Favourite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="helper-card reveal" data-service="taxi">
+          <img class="helper-avatar" src="https://i.pravatar.cc/100?img=60" alt="John">
+          <div class="helper-info">
+            <p class="helper-name">John Walker</p>
+            <div class="helper-meta">
+              <span class="star-icon">★</span> 4.6 <span>(43 reviews)</span> · 1.8 km
+            </div>
+            <span class="service-badge badge-taxi">Pet Taxi</span>
+            <p class="helper-price">From $10/trip</p>
+          </div>
+          <button class="fav-btn" aria-label="Favourite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Bottom Nav -->
+    <nav class="bottom-nav">
+      <div class="nav-item" data-page="home">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        <span class="nav-label">Home</span>
+      </div>
+      <div class="nav-item active" data-page="search">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span class="nav-label">Search</span>
+      </div>
+      <div class="nav-item" data-page="booking">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <span class="nav-label">Booking</span>
+      </div>
+      <div class="nav-item" data-page="chat">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        </svg>
+        <span class="nav-label">Chat</span>
+      </div>
+      <div class="nav-item" data-page="profile">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span class="nav-label">Profile</span>
+      </div>
+    </nav>
+
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

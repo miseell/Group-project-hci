@@ -1,0 +1,265 @@
+/* ===========================
+   PawPatrol – Taxi Tracking CSS
+   =========================== */
+
+.taxi-tracking-page {
+  min-height: 100%;
+}
+
+.tt-header {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tt-back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1.5px solid var(--gray-200);
+  background: var(--white);
+  cursor: pointer;
+  color: var(--brand-blue);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.tt-title {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 950;
+  color: var(--gray-800);
+}
+
+.tt-content {
+  padding-bottom: 100px;
+}
+
+.tt-map {
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(254,243,199,.9), rgba(253,230,138,.55));
+  border: 1.5px solid rgba(245,158,11,.22);
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.tt-map-streets {
+  position: relative;
+  height: 280px;
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 20% 35%, rgba(245,158,11,.18), transparent 45%),
+    radial-gradient(circle at 75% 65%, rgba(245,158,11,.12), transparent 55%),
+    linear-gradient(#ffffff, #fffaf0);
+  border: 1px solid rgba(245,158,11,.16);
+  overflow: hidden;
+}
+
+.tt-road {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(148,163,184,.18);
+}
+
+.tt-road-1 { width: 66%; height: 10px; top: 58%; left: 18%; transform: rotate(-14deg); }
+.tt-road-2 { width: 72%; height: 10px; top: 28%; left: 8%; transform: rotate(12deg); }
+.tt-road-3 { width: 58%; height: 10px; top: 67%; left: 30%; transform: rotate(26deg); }
+
+.tt-route-line {
+  position: absolute;
+  inset: 32px 28px;
+  border-radius: 999px;
+  border: 3px dashed rgba(245,158,11,.55);
+  transform: rotate(-6deg);
+  opacity: .9;
+}
+
+.tt-pet-taxi {
+  position: absolute;
+  left: 22%;
+  top: 58%;
+  width: 36px;
+  height: 36px;
+  border-radius: 16px;
+  background: rgba(245,158,11,.18);
+  border: 1.5px solid rgba(245,158,11,.35);
+}
+
+.tt-pin {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  border: 1.5px solid rgba(245,158,11,.35);
+  box-shadow: 0 10px 22px rgba(245,158,11,.18);
+  font-size: 1.05rem;
+}
+
+.tt-pin-driver { top: 58%; left: 22%; }
+.tt-pin-destination { top: 20%; left: 62%; }
+
+.tt-speech {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  right: 14px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.78);
+  border: 1.5px solid rgba(245,158,11,.18);
+  color: var(--gray-800);
+  font-weight: 800;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.tt-card {
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tt-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 16px;
+  border: 1.5px solid rgba(245,158,11,.22);
+  background: rgba(245,158,11,.10);
+  margin-bottom: 12px;
+}
+
+.tt-banner-emoji { font-size: 1.7rem; }
+
+.tt-banner-label {
+  font-size: .82rem;
+  font-weight: 900;
+  color: var(--gray-600);
+}
+
+.tt-banner-time {
+  font-size: 1.1rem;
+  font-weight: 1000;
+  color: #92400e;
+  margin-top: 2px;
+}
+
+.tt-banner-support {
+  font-size: .86rem;
+  color: var(--gray-600);
+  margin-top: 2px;
+}
+
+.tt-driver-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 16px;
+  border: 1.5px solid var(--gray-100);
+  background: var(--gray-50);
+  margin-bottom: 12px;
+}
+
+.tt-driver-avatar {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  object-fit: cover;
+  border: 1.5px solid var(--gray-200);
+  background: var(--white);
+}
+
+.tt-driver-top {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tt-driver-name {
+  font-weight: 1000;
+  color: var(--gray-800);
+}
+
+.tt-driver-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-700);
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+.tt-star { color: #f59e0b; }
+
+.tt-driver-vehicle {
+  margin-top: 4px;
+  color: var(--gray-700);
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+.tt-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tt-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 10px;
+  border-radius: 16px;
+  border: 1.5px solid var(--gray-100);
+  background: var(--white);
+  cursor: pointer;
+  font-weight: 950;
+  color: var(--gray-800);
+}
+
+.tt-action-icon { font-size: 1.05rem; }
+
+.tt-cancel-btn {
+  width: 100%;
+  border-radius: 16px;
+  padding: 12px 10px;
+  border: 1.5px solid rgba(239,68,68,.25);
+  background: rgba(239,68,68,.08);
+  color: #b91c1c;
+  font-weight: 1000;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tt-view-details-btn {
+  width: 100%;
+  border-radius: 999px;
+  padding: 14px 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: var(--white);
+  font-weight: 1000;
+  box-shadow: 0 14px 30px rgba(37,99,235,.25);
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity .25s, transform .25s;
+}
+
+.tt-view-details-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

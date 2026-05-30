@@ -1,0 +1,218 @@
+/* ===========================
+   PawPatrol – Taxi Page CSS
+   =========================== */
+
+/* ---- Hero Banner ---- */
+.taxi-hero {
+  border-radius: 22px;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  padding: 22px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.taxi-hero-text {}
+
+.taxi-tag {
+  display: inline-block;
+  background: rgba(245,158,11,.2);
+  color: #b45309;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 8px;
+}
+
+.taxi-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #92400e;
+  margin-bottom: 4px;
+}
+
+.taxi-sub {
+  font-size: .82rem;
+  color: #b45309;
+  line-height: 1.4;
+}
+
+.taxi-hero-emoji { font-size: 3.5rem; line-height: 1; flex-shrink: 0; }
+
+/* ---- Form Card ---- */
+.form-card {
+  background: var(--white);
+  border-radius: 18px;
+  border: 1.5px solid var(--gray-100);
+  padding: 18px 16px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.form-card-title {
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-bottom: 14px;
+}
+
+/* ---- Location Input Cards ---- */
+.location-input-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: var(--gray-50);
+  transition: border-color .2s;
+}
+
+.location-input-card:focus-within {
+  border-color: var(--brand-blue);
+  background: var(--white);
+}
+
+.loc-pin { font-size: 1.1rem; flex-shrink: 0; }
+
+.loc-text { flex: 1; }
+.loc-label { font-size: .7rem; color: var(--gray-400); font-weight: 500; margin-bottom: 2px; }
+.loc-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  background: transparent;
+}
+.loc-input::placeholder { color: var(--gray-300); font-weight: 400; }
+
+.nav-arrow { color: var(--gray-300); }
+.nav-arrow svg { width: 16px; height: 16px; }
+
+/* ---- Date Input Card ---- */
+.date-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 12px;
+  background: var(--gray-50);
+  transition: border-color .2s;
+}
+
+.date-card:focus-within {
+  border-color: var(--brand-blue);
+  background: var(--white);
+}
+
+.cal-icon { font-size: 1.1rem; }
+
+.date-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--font);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  background: transparent;
+}
+
+/* ---- Pet Type Select ---- */
+.pet-select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: 12px;
+  font-family: var(--font);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  background: var(--gray-50);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: border-color .2s;
+}
+
+.pet-select:focus { border-color: var(--brand-blue); background-color: var(--white); }
+
+/* ---- Ride Type Cards ---- */
+.ride-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ride-card {
+  border: 2px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 16px 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease;
+  background: var(--white);
+}
+
+.ride-card:hover { border-color: var(--brand-yellow); }
+
+.ride-card.selected {
+  border-color: var(--brand-yellow);
+  background: #fffbeb;
+  box-shadow: 0 4px 16px rgba(245,158,11,.2);
+}
+
+.ride-emoji { font-size: 2rem; margin-bottom: 8px; display: block; }
+.ride-title { font-size: .88rem; font-weight: 800; color: var(--gray-800); margin-bottom: 4px; }
+.ride-desc  { font-size: .72rem; color: var(--gray-400); margin-bottom: 8px; line-height: 1.4; }
+.ride-price { font-size: .95rem; font-weight: 800; color: var(--brand-yellow); }
+
+/* ---- Book CTA ---- */
+.book-taxi-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  border: none;
+  border-radius: 50px;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(245,158,11,.4);
+  transition: transform .2s, box-shadow .2s;
+  letter-spacing: .3px;
+  margin-top: 4px;
+}
+
+.book-taxi-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(245,158,11,.5);
+}
+
+/* ---- Back link ---- */
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--brand-blue);
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 4px;
+}

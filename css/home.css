@@ -1,0 +1,190 @@
+/* ===========================
+   PawPatrol – Home Page CSS
+   =========================== */
+
+/* ---- Hero Banner ---- */
+.hero-banner {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  padding: 22px 18px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  min-height: 140px;
+}
+
+.hero-text { flex: 1; }
+
+.hero-headline {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  line-height: 1.3;
+  margin-bottom: 14px;
+  max-width: 170px;
+}
+
+.find-helper-btn {
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-cyan));
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: var(--font);
+  font-size: .83rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(59,130,246,.35);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.find-helper-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(59,130,246,.4); }
+
+.hero-pets {
+  font-size: 4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(2px 4px 8px rgba(0,0,0,.12));
+}
+
+/* ---- Category Grid ---- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 8px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+  border: 1.5px solid transparent;
+}
+
+.category-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+.category-card[data-category="sitting"]  { background: #fce7f3; }
+.category-card[data-category="walking"]  { background: #dcfce7; }
+.category-card[data-category="taxi"]     { background: #fef9c3; }
+.category-card[data-category="grooming"]{ background: #ede9fe; }
+
+.cat-icon { font-size: 1.6rem; }
+
+.cat-label {
+  font-size: .72rem;
+  font-weight: 700;
+  color: var(--gray-700);
+}
+
+/* ---- Recommended ---- */
+.helpers-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 24px;
+}
+
+.helpers-row::-webkit-scrollbar { display: none; }
+
+.helpers-row .helper-card {
+  min-width: 200px;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.helpers-row .helper-avatar {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.helpers-row .fav-btn { top: 10px; right: 10px; }
+
+/* ---- Discount Banner ---- */
+.discount-banner {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  padding: 22px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.discount-text { flex: 1; }
+
+.discount-badge {
+  background: rgba(255,255,255,.25);
+  color: var(--white);
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 50px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.discount-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.claim-btn {
+  background: var(--white);
+  color: var(--brand-purple);
+  border: none;
+  border-radius: 50px;
+  padding: 9px 18px;
+  font-family: var(--font);
+  font-size: .8rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform .2s;
+}
+
+.claim-btn:hover { transform: scale(1.05); }
+
+.discount-emoji { font-size: 2.8rem; flex-shrink: 0; }
+
+/* ---- Active Booking Empty State ---- */
+.empty-state {
+  text-align: center;
+  padding: 28px 16px;
+  background: var(--gray-50);
+  border-radius: 16px;
+  border: 2px dashed var(--gray-200);
+}
+
+.empty-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.empty-title { font-size: .93rem; font-weight: 700; color: var(--gray-600); margin-bottom: 4px; }
+.empty-sub   { font-size: .8rem;  color: var(--gray-400); }
+
+/* ---- User Avatar ---- */
+.user-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2.5px solid var(--brand-blue);
+  cursor: pointer;
+}
+
+.home-search-bar { cursor: pointer; }

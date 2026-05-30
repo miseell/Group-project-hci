@@ -1,0 +1,143 @@
+/* ===========================
+   PawPatrol – Booking Page CSS
+   =========================== */
+
+/* ---- Segment Tabs ---- */
+.tab-bar {
+  display: flex;
+  background: var(--gray-100);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.booking-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  font-family: var(--font);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.booking-tab.active {
+  background: var(--white);
+  color: var(--brand-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---- Booking Panels ---- */
+.booking-panel { display: none; }
+.booking-panel.active { display: flex; flex-direction: column; gap: 14px; }
+
+/* ---- Booking Card ---- */
+.booking-card {
+  border-radius: 18px;
+  padding: 16px;
+  border: 1.5px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-card.grooming { background: #f5f3ff; border-color: #ddd6fe; }
+.booking-card.sitting  { background: #fdf2f8; border-color: #fbcfe8; }
+.booking-card.taxi     { background: #fffbeb; border-color: #fde68a; }
+.booking-card.walking  { background: #f0fdf4; border-color: #bbf7d0; }
+
+.booking-card-top {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.booking-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.booking-card.grooming .booking-icon { background: #ede9fe; }
+.booking-card.sitting  .booking-icon { background: #fce7f3; }
+.booking-card.taxi     .booking-icon { background: #fef9c3; }
+.booking-card.walking  .booking-icon { background: #dcfce7; }
+
+.booking-details { flex: 1; }
+
+.booking-service {
+  font-size: .95rem;
+  font-weight: 800;
+  color: var(--gray-800);
+  margin-bottom: 4px;
+}
+
+.booking-datetime {
+  font-size: .78rem;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.booking-caregiver {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--gray-600);
+}
+
+.caregiver-mini-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ---- Status Badge ---- */
+.status-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: .7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.status-scheduled { background: #dbeafe; color: #1d4ed8; }
+.status-completed  { background: #dcfce7; color: #15803d; }
+
+/* ---- View Details Button ---- */
+.view-details-btn {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 50px;
+  background: transparent;
+  font-family: var(--font);
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.booking-card.grooming .view-details-btn { border-color: #8b5cf6; color: #8b5cf6; }
+.booking-card.sitting  .view-details-btn { border-color: #ec4899; color: #ec4899; }
+.booking-card.taxi     .view-details-btn { border-color: #f59e0b; color: #f59e0b; }
+.booking-card.walking  .view-details-btn { border-color: #22c55e; color: #22c55e; }
+
+.view-details-btn:hover { opacity: .8; transform: translateY(-1px); }

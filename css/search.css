@@ -1,0 +1,90 @@
+/* ===========================
+   PawPatrol – Search Page CSS
+   =========================== */
+
+/* ---- Page title block ---- */
+.search-hero {
+  padding: 4px 0 16px;
+}
+
+.page-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--gray-800);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.page-title .paw-accent { font-size: 1.2rem; }
+
+.page-subtitle { font-size: .85rem; color: var(--gray-400); }
+
+/* ---- Filter Pills ---- */
+.filter-pills {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  scrollbar-width: none;
+}
+
+.filter-pills::-webkit-scrollbar { display: none; }
+
+.filter-pill {
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-family: var(--font);
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1.5px solid var(--gray-200);
+  background: var(--gray-50);
+  color: var(--gray-600);
+  white-space: nowrap;
+  transition: all .2s ease;
+}
+
+.filter-pill:hover {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue);
+}
+
+.filter-pill.active {
+  background: var(--brand-blue);
+  border-color: var(--brand-blue);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(59,130,246,.3);
+}
+
+/* ---- Location Card ---- */
+.location-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-200);
+  border-radius: 14px;
+  padding: 13px 16px;
+  margin-bottom: 22px;
+}
+
+.location-icon { color: var(--brand-pink); flex-shrink: 0; }
+.location-icon svg { width: 18px; height: 18px; }
+
+.location-text { flex: 1; }
+.location-label { font-size: .72rem; color: var(--gray-400); font-weight: 500; }
+.location-value { font-size: .87rem; font-weight: 700; color: var(--gray-800); }
+
+.change-link { font-size: .8rem; font-weight: 600; color: var(--brand-blue); cursor: pointer; white-space: nowrap; }
+
+/* ---- Helpers vertical list ---- */
+.helpers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.helpers-list .helper-card { flex-direction: row; }

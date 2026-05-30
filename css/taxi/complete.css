@@ -1,0 +1,141 @@
+/* ===========================
+   PawPatrol – Taxi Complete CSS
+   =========================== */
+
+.tx-complete-page {
+  min-height: 100%;
+}
+
+.tcx-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 2px;
+}
+
+.tcx-title {
+  font-size: 1.35rem;
+  font-weight: 1000;
+  color: var(--gray-800);
+}
+
+.tcx-content {
+  padding-bottom: 90px;
+}
+
+.tcx-success {
+  background: linear-gradient(135deg, rgba(245,158,11,.18), rgba(253,230,138,.55));
+  border: 1.5px solid rgba(245,158,11,.22);
+  border-radius: 18px;
+  padding: 18px 16px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.tcx-success-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 20px;
+  margin: 0 auto 10px;
+  display: grid;
+  place-items: center;
+  background: rgba(245,158,11,.18);
+  border: 1.5px solid rgba(245,158,11,.35);
+  font-size: 1.4rem;
+  font-weight: 1000;
+  color: #92400e;
+}
+
+.tcx-success-headline {
+  font-size: 1.25rem;
+  font-weight: 1000;
+  color: #92400e;
+  margin-bottom: 6px;
+}
+
+.tcx-success-message {
+  font-size: .92rem;
+  font-weight: 800;
+  color: var(--gray-700);
+  line-height: 1.45;
+}
+
+.tcx-payment-card {
+  background: var(--white);
+  border: 1.5px solid var(--gray-100);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.tcx-divider {
+  height: 1px;
+  background: var(--gray-100);
+  margin: 12px 0;
+}
+
+.tcx-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.tcx-total-label {
+  color: var(--gray-600);
+  font-weight: 950;
+}
+
+.tcx-total-value {
+  color: var(--brand-yellow);
+  font-weight: 1100;
+  font-size: 1.2rem;
+}
+
+.tcx-method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.tcx-method-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tcx-method-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--gray-50);
+  border: 1.5px solid var(--gray-100);
+}
+
+.tcx-method-name {
+  font-weight: 1000;
+  color: var(--gray-800);
+}
+
+.tcx-method-sub {
+  color: var(--gray-600);
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+.tcx-back-btn {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 999px;
+  padding: 14px 14px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #16a34a, #4ade80);
+  color: var(--white);
+  font-weight: 1100;
+  box-shadow: 0 16px 34px rgba(22,163,74,.25);
+}

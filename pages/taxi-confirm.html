@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawPatrol – Ride Details</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/taxi/confirm.css">
+</head>
+<body>
+
+  <div class="page-wrap taxi-confirm-page">
+
+    <!-- Header -->
+    <header class="tc-header">
+      <button class="tc-back-btn" type="button" aria-label="Back">←</button>
+      <h1 class="tc-title">Ride Details</h1>
+      <div class="tc-spacer" aria-hidden="true"></div>
+    </header>
+
+    <main class="page-content tc-content">
+
+      <!-- Map -->
+      <section class="tc-map" aria-label="Ride route map">
+        <div class="tc-map-streets">
+          <div class="tc-road tc-road-1"></div>
+          <div class="tc-road tc-road-2"></div>
+          <div class="tc-road tc-road-3"></div>
+
+          <div class="tc-route-line"></div>
+          <div class="tc-taxi-vehicle" aria-hidden="true"></div>
+
+          <div class="tc-pin tc-pin-start" aria-label="Pickup pin">📍</div>
+          <div class="tc-pin tc-pin-end" aria-label="Destination pin">📍</div>
+        </div>
+
+        <div class="tc-route-legend">
+          <span class="tc-legend-pill">Pet Taxi Route</span>
+        </div>
+      </section>
+
+      <!-- Info card -->
+      <section class="tc-card" aria-label="Ride information card">
+        <div class="tc-info">
+          <div class="tc-row">
+            <div class="tc-icon" aria-hidden="true">📍</div>
+            <div class="tc-text">
+              <div class="tc-label">Pickup Location</div>
+              <div class="tc-support">Maple Street, Springfield</div>
+            </div>
+          </div>
+
+          <div class="tc-row">
+            <div class="tc-icon" aria-hidden="true">🏁</div>
+            <div class="tc-text">
+              <div class="tc-label">Destination</div>
+              <div class="tc-support">Oak Avenue, Springfield</div>
+            </div>
+          </div>
+
+          <div class="tc-row">
+            <div class="tc-icon" aria-hidden="true">📅</div>
+            <div class="tc-text">
+              <div class="tc-label">Date &amp; Time</div>
+              <div class="tc-support">Jun 20, 2026 · 9:30 AM</div>
+            </div>
+          </div>
+
+          <div class="tc-row">
+            <div class="tc-icon" aria-hidden="true">🐾</div>
+            <div class="tc-text">
+              <div class="tc-label">Pet Type</div>
+              <div class="tc-support">🐕 Pet Standard</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-divider" role="separator" aria-hidden="true"></div>
+
+        <!-- Pricing -->
+        <div class="tc-pricing" aria-label="Ride pricing">
+          <div class="tc-price-row">
+            <div class="tc-price-left">Distance Fee</div>
+            <div class="tc-price-right">$18.00</div>
+          </div>
+
+          <div class="tc-price-row">
+            <div class="tc-price-left">Car Type (Pet Standard)</div>
+            <div class="tc-price-right">$10.00</div>
+          </div>
+
+          <div class="tc-total-row">
+            <div class="tc-total-left">Total Price</div>
+            <div class="tc-total-right">Rp75.000</div>
+          </div>
+        </div>
+
+        <button class="tc-confirm-btn" type="button" aria-label="Confirm and book">
+          Confirm &amp; Book
+        </button>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
