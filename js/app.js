@@ -281,23 +281,6 @@ function openChatThread(item) {
   thread.classList.add('open');
 
   thread.querySelector('.thread-back').addEventListener('click', () => thread.classList.remove('open'));
-
-  const sendBtn = thread.querySelector('.thread-send');
-  const inputEl = thread.querySelector('.thread-input');
-  function sendMsg() {
-    const text = inputEl.value.trim();
-    if (!text) return;
-    const msgs = $('#thread-msgs');
-    const div = document.createElement('div');
-    div.className = 'msg msg-out';
-    div.innerHTML = `<p>${text}</p><span class="msg-time">Now</span>`;
-    msgs.appendChild(div);
-    inputEl.value = '';
-    msgs.scrollTop = msgs.scrollHeight;
-  }
-  sendBtn.addEventListener('click', sendMsg);
-  inputEl.addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(); });
-
   // Remove unread badge
   const badge2 = item.querySelector('.unread-badge');
   if (badge2) badge2.remove();
