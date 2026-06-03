@@ -90,7 +90,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  margin-left: 6px;
+  /* margin-left: 6px; */
 }
 
 /* Divider between chat groups */
